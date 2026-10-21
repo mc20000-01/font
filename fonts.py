@@ -35,8 +35,9 @@ def convert(ttf_path, out_dir):
     gs, cmap = font.getGlyphSet(), font.getBestCmap()
     upm = font["head"].unitsPerEm
     cap = getattr(font["OS/2"], "sCapHeight", 0) or upm * 0.7
-    s = 16 / cap          # capital letters are 16 units tall (Lucide's 2px padding)
-    base = 19.5           # baseline y, so caps span 3.5-19.5 and descenders fit below
+    desc = abs(font["hhea"].descent)
+    s = 20 / (cap + desc)      # caps + descenders fit in 20 units
+    base = 2 + cap * s         # baseline; descenders end at about 22
     os.makedirs(out_dir, exist_ok=True)
     n = 0
     for code in range(33, 127):
