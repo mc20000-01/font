@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(5.621,17.584) scale(0.009990,-0.009990)"><path fill="#ffffff" d="M180 0V1490H1088V1322H370V836H1039V668H370V168H1097V0Z"/></g></svg>
+<!-- @license font-svg v1.0.0 - OFL-1.1 | inter | char: U+0045 -->
+<svg
+  class="font-glyph font-inter font-glyph-upper-e"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  stroke="none"
+>
+  <path d="M7.42 17.58V2.7H16.49V4.38H9.32V9.23H16V10.91H9.32V15.91H16.58V17.58Z" />
+</svg>

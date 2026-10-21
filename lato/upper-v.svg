@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(4.633,18.028) scale(0.010881,-0.010881)"><path fill="#ffffff" d="M1348 1433 764 0H590L6 1433H161Q187 1433 203.0 1420.0Q219 1407 227 1387L631 376Q644 342 656.5 302.0Q669 262 679 218Q689 262 700.0 302.0Q711 342 724 376L1127 1387Q1133 1404 1150.5 1418.5Q1168 1433 1193 1433Z"/></g></svg>
+<!-- @license font-svg v1.0.0 - OFL-1.1 | lato | char: U+0056 -->
+<svg
+  class="font-glyph font-lato font-glyph-upper-v"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  stroke="none"
+>
+  <path d="M19.3 2.44 12.95 18.03H11.05L4.7 2.44H6.39Q6.67 2.44 6.84 2.58Q7.02 2.72 7.1 2.94L11.5 13.94Q11.64 14.31 11.78 14.74Q11.91 15.18 12.02 15.66Q12.13 15.18 12.25 14.74Q12.37 14.31 12.51 13.94L16.9 2.94Q16.96 2.75 17.15 2.59Q17.34 2.44 17.61 2.44Z" />
+</svg>

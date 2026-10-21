@@ -1,0 +1,384 @@
+{
+  "font": "lato",
+  "license": "OFL-1.1",
+  "source": "https://github.com/google/fonts",
+  "size": 24,
+  "glyphs": {
+    "u0021.svg": {
+      "char": "!",
+      "unicode": "U+0021"
+    },
+    "u0022.svg": {
+      "char": "\"",
+      "unicode": "U+0022"
+    },
+    "u0023.svg": {
+      "char": "#",
+      "unicode": "U+0023"
+    },
+    "u0024.svg": {
+      "char": "$",
+      "unicode": "U+0024"
+    },
+    "u0025.svg": {
+      "char": "%",
+      "unicode": "U+0025"
+    },
+    "u0026.svg": {
+      "char": "&",
+      "unicode": "U+0026"
+    },
+    "u0027.svg": {
+      "char": "'",
+      "unicode": "U+0027"
+    },
+    "u0028.svg": {
+      "char": "(",
+      "unicode": "U+0028"
+    },
+    "u0029.svg": {
+      "char": ")",
+      "unicode": "U+0029"
+    },
+    "u002a.svg": {
+      "char": "*",
+      "unicode": "U+002A"
+    },
+    "u002b.svg": {
+      "char": "+",
+      "unicode": "U+002B"
+    },
+    "u002c.svg": {
+      "char": ",",
+      "unicode": "U+002C"
+    },
+    "u002d.svg": {
+      "char": "-",
+      "unicode": "U+002D"
+    },
+    "u002e.svg": {
+      "char": ".",
+      "unicode": "U+002E"
+    },
+    "u002f.svg": {
+      "char": "/",
+      "unicode": "U+002F"
+    },
+    "0.svg": {
+      "char": "0",
+      "unicode": "U+0030"
+    },
+    "1.svg": {
+      "char": "1",
+      "unicode": "U+0031"
+    },
+    "2.svg": {
+      "char": "2",
+      "unicode": "U+0032"
+    },
+    "3.svg": {
+      "char": "3",
+      "unicode": "U+0033"
+    },
+    "4.svg": {
+      "char": "4",
+      "unicode": "U+0034"
+    },
+    "5.svg": {
+      "char": "5",
+      "unicode": "U+0035"
+    },
+    "6.svg": {
+      "char": "6",
+      "unicode": "U+0036"
+    },
+    "7.svg": {
+      "char": "7",
+      "unicode": "U+0037"
+    },
+    "8.svg": {
+      "char": "8",
+      "unicode": "U+0038"
+    },
+    "9.svg": {
+      "char": "9",
+      "unicode": "U+0039"
+    },
+    "u003a.svg": {
+      "char": ":",
+      "unicode": "U+003A"
+    },
+    "u003b.svg": {
+      "char": ";",
+      "unicode": "U+003B"
+    },
+    "u003c.svg": {
+      "char": "<",
+      "unicode": "U+003C"
+    },
+    "u003d.svg": {
+      "char": "=",
+      "unicode": "U+003D"
+    },
+    "u003e.svg": {
+      "char": ">",
+      "unicode": "U+003E"
+    },
+    "u003f.svg": {
+      "char": "?",
+      "unicode": "U+003F"
+    },
+    "u0040.svg": {
+      "char": "@",
+      "unicode": "U+0040"
+    },
+    "upper-a.svg": {
+      "char": "A",
+      "unicode": "U+0041"
+    },
+    "upper-b.svg": {
+      "char": "B",
+      "unicode": "U+0042"
+    },
+    "upper-c.svg": {
+      "char": "C",
+      "unicode": "U+0043"
+    },
+    "upper-d.svg": {
+      "char": "D",
+      "unicode": "U+0044"
+    },
+    "upper-e.svg": {
+      "char": "E",
+      "unicode": "U+0045"
+    },
+    "upper-f.svg": {
+      "char": "F",
+      "unicode": "U+0046"
+    },
+    "upper-g.svg": {
+      "char": "G",
+      "unicode": "U+0047"
+    },
+    "upper-h.svg": {
+      "char": "H",
+      "unicode": "U+0048"
+    },
+    "upper-i.svg": {
+      "char": "I",
+      "unicode": "U+0049"
+    },
+    "upper-j.svg": {
+      "char": "J",
+      "unicode": "U+004A"
+    },
+    "upper-k.svg": {
+      "char": "K",
+      "unicode": "U+004B"
+    },
+    "upper-l.svg": {
+      "char": "L",
+      "unicode": "U+004C"
+    },
+    "upper-m.svg": {
+      "char": "M",
+      "unicode": "U+004D"
+    },
+    "upper-n.svg": {
+      "char": "N",
+      "unicode": "U+004E"
+    },
+    "upper-o.svg": {
+      "char": "O",
+      "unicode": "U+004F"
+    },
+    "upper-p.svg": {
+      "char": "P",
+      "unicode": "U+0050"
+    },
+    "upper-q.svg": {
+      "char": "Q",
+      "unicode": "U+0051"
+    },
+    "upper-r.svg": {
+      "char": "R",
+      "unicode": "U+0052"
+    },
+    "upper-s.svg": {
+      "char": "S",
+      "unicode": "U+0053"
+    },
+    "upper-t.svg": {
+      "char": "T",
+      "unicode": "U+0054"
+    },
+    "upper-u.svg": {
+      "char": "U",
+      "unicode": "U+0055"
+    },
+    "upper-v.svg": {
+      "char": "V",
+      "unicode": "U+0056"
+    },
+    "upper-w.svg": {
+      "char": "W",
+      "unicode": "U+0057"
+    },
+    "upper-x.svg": {
+      "char": "X",
+      "unicode": "U+0058"
+    },
+    "upper-y.svg": {
+      "char": "Y",
+      "unicode": "U+0059"
+    },
+    "upper-z.svg": {
+      "char": "Z",
+      "unicode": "U+005A"
+    },
+    "u005b.svg": {
+      "char": "[",
+      "unicode": "U+005B"
+    },
+    "u005c.svg": {
+      "char": "\\",
+      "unicode": "U+005C"
+    },
+    "u005d.svg": {
+      "char": "]",
+      "unicode": "U+005D"
+    },
+    "u005e.svg": {
+      "char": "^",
+      "unicode": "U+005E"
+    },
+    "u005f.svg": {
+      "char": "_",
+      "unicode": "U+005F"
+    },
+    "u0060.svg": {
+      "char": "`",
+      "unicode": "U+0060"
+    },
+    "a.svg": {
+      "char": "a",
+      "unicode": "U+0061"
+    },
+    "b.svg": {
+      "char": "b",
+      "unicode": "U+0062"
+    },
+    "c.svg": {
+      "char": "c",
+      "unicode": "U+0063"
+    },
+    "d.svg": {
+      "char": "d",
+      "unicode": "U+0064"
+    },
+    "e.svg": {
+      "char": "e",
+      "unicode": "U+0065"
+    },
+    "f.svg": {
+      "char": "f",
+      "unicode": "U+0066"
+    },
+    "g.svg": {
+      "char": "g",
+      "unicode": "U+0067"
+    },
+    "h.svg": {
+      "char": "h",
+      "unicode": "U+0068"
+    },
+    "i.svg": {
+      "char": "i",
+      "unicode": "U+0069"
+    },
+    "j.svg": {
+      "char": "j",
+      "unicode": "U+006A"
+    },
+    "k.svg": {
+      "char": "k",
+      "unicode": "U+006B"
+    },
+    "l.svg": {
+      "char": "l",
+      "unicode": "U+006C"
+    },
+    "m.svg": {
+      "char": "m",
+      "unicode": "U+006D"
+    },
+    "n.svg": {
+      "char": "n",
+      "unicode": "U+006E"
+    },
+    "o.svg": {
+      "char": "o",
+      "unicode": "U+006F"
+    },
+    "p.svg": {
+      "char": "p",
+      "unicode": "U+0070"
+    },
+    "q.svg": {
+      "char": "q",
+      "unicode": "U+0071"
+    },
+    "r.svg": {
+      "char": "r",
+      "unicode": "U+0072"
+    },
+    "s.svg": {
+      "char": "s",
+      "unicode": "U+0073"
+    },
+    "t.svg": {
+      "char": "t",
+      "unicode": "U+0074"
+    },
+    "u.svg": {
+      "char": "u",
+      "unicode": "U+0075"
+    },
+    "v.svg": {
+      "char": "v",
+      "unicode": "U+0076"
+    },
+    "w.svg": {
+      "char": "w",
+      "unicode": "U+0077"
+    },
+    "x.svg": {
+      "char": "x",
+      "unicode": "U+0078"
+    },
+    "y.svg": {
+      "char": "y",
+      "unicode": "U+0079"
+    },
+    "z.svg": {
+      "char": "z",
+      "unicode": "U+007A"
+    },
+    "u007b.svg": {
+      "char": "{",
+      "unicode": "U+007B"
+    },
+    "u007c.svg": {
+      "char": "|",
+      "unicode": "U+007C"
+    },
+    "u007d.svg": {
+      "char": "}",
+      "unicode": "U+007D"
+    },
+    "u007e.svg": {
+      "char": "~",
+      "unicode": "U+007E"
+    }
+  }
+}

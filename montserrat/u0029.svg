@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(9.389,17.817) scale(0.021231,-0.021231)"><path fill="#ffffff" d="M58 -194Q115 -98 141.5 18.5Q168 135 168 274Q168 413 141.5 529.5Q115 646 58 742H77Q130 654 159.0 533.5Q188 413 188 274Q188 135 159.0 16.0Q130 -103 77 -194Z"/></g></svg>
+<!-- @license font-svg v1.0.0 - OFL-1.1 | montserrat | char: U+0029 -->
+<svg
+  class="font-glyph font-montserrat font-glyph-u0029"
+  xmlns="http://www.w3.org/2000/svg"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+  stroke="none"
+>
+  <path d="M10.62 21.94Q11.83 19.9 12.39 17.42Q12.96 14.95 12.96 12Q12.96 9.05 12.39 6.58Q11.83 4.1 10.62 2.06H11.02Q12.15 3.93 12.76 6.49Q13.38 9.05 13.38 12Q13.38 14.95 12.76 17.48Q12.15 20 11.02 21.94Z" />
+</svg>
