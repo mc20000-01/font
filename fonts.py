@@ -7,16 +7,15 @@ from fontTools.pens.svgPathPen import SVGPathPen
 
 REPO_URL = "https://github.com/mc20000-01/font.git"
 BASE = "https://raw.githubusercontent.com/google/fonts/main/"
-FILL = "#ffffff"  # <img>/URL use ignores currentColor, so set a real color
+FILL = "#ffffff"
+SIZE = 20  # native size, like lucide
 
 FONTS = {
-    # normal
     "inter":           "ofl/inter/Inter[opsz,wght].ttf",
     "roboto":          "ofl/roboto/Roboto[wdth,wght].ttf",
     "open-sans":       "ofl/opensans/OpenSans[wdth,wght].ttf",
     "lato":            "ofl/lato/Lato-Regular.ttf",
     "montserrat":      "ofl/montserrat/Montserrat[wght].ttf",
-    # small / en-only
     "press-start-2p":  "ofl/pressstart2p/PressStart2P-Regular.ttf",
     "vt323":           "ofl/vt323/VT323-Regular.ttf",
     "silkscreen":      "ofl/silkscreen/Silkscreen-Regular.ttf",
@@ -29,13 +28,14 @@ def glyph_filename(ch):
         return ch
     if ch.isupper():
         return f"upper-{ch.lower()}"
-    return f"u{ord(ch):04x}"  # punctuation, e.g. u0021 = !
+    return f"u{ord(ch):04x}"
 
 def convert(ttf_path, out_dir):
     font = TTFont(ttf_path)
     gs, cmap = font.getGlyphSet(), font.getBestCmap()
     asc, desc = font["hhea"].ascent, font["hhea"].descent
     h = asc - desc
+    s = SIZE / h  # one scale per font so glyph sizes stay consistent
     os.makedirs(out_dir, exist_ok=True)
     n = 0
     for code in range(33, 127):
@@ -47,8 +47,12 @@ def convert(ttf_path, out_dir):
         d = pen.getCommands()
         if not d:
             continue
-        svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {g.width} {h}">'
-               f'<g transform="translate(0,{asc}) scale(1,-1)">'
+        gs_ = min(s, SIZE / g.width) if g.width else s  # shrink if too wide
+        tx = (SIZE - g.width * gs_) / 2
+        ty = asc * gs_ + (SIZE - h * gs_) / 2
+        svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{SIZE}" height="{SIZE}" '
+               f'viewBox="0 0 {SIZE} {SIZE}">'
+               f'<g transform="translate({tx:.3f},{ty:.3f}) scale({gs_:.6f},{-gs_:.6f})">'
                f'<path fill="{FILL}" d="{d}"/></g></svg>')
         with open(os.path.join(out_dir, glyph_filename(chr(code)) + ".svg"), "w") as f:
             f.write(svg)
@@ -74,7 +78,6 @@ for f in os.listdir("_tmp"):
     os.remove(os.path.join("_tmp", f))
 os.rmdir("_tmp")
 
-# git
 if not os.path.isdir(".git"):
     sh("git", "init", "-b", "main")
 if sh("git", "remote", "get-url", "origin") == 0:
@@ -83,7 +86,7 @@ else:
     sh("git", "remote", "add", "origin", REPO_URL)
 
 sh("git", "add", ".")
-sh("git", "commit", "-m", "add font svgs")
+sh("git", "commit", "-m", "20x20 glyph svgs")
 if sh("git", "push", "-u", "origin", "main") != 0:
     sh("git", "pull", "--rebase", "origin", "main")
     sh("git", "push", "-u", "origin", "main")
