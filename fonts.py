@@ -8,7 +8,7 @@ from fontTools.pens.svgPathPen import SVGPathPen
 REPO_URL = "https://github.com/mc20000-01/font.git"
 BASE = "https://raw.githubusercontent.com/google/fonts/main/"
 FILL = "#ffffff"
-SIZE = 20  # native size, like lucide
+SIZE = 24  # native size, like lucide
 
 FONTS = {
     "inter":           "ofl/inter/Inter[opsz,wght].ttf",
@@ -33,9 +33,10 @@ def glyph_filename(ch):
 def convert(ttf_path, out_dir):
     font = TTFont(ttf_path)
     gs, cmap = font.getGlyphSet(), font.getBestCmap()
-    asc, desc = font["hhea"].ascent, font["hhea"].descent
-    h = asc - desc
-    s = SIZE / h  # one scale per font so glyph sizes stay consistent
+    upm = font["head"].unitsPerEm
+    cap = getattr(font["OS/2"], "sCapHeight", 0) or upm * 0.7
+    s = 16 / cap          # capital letters are 16 units tall (Lucide's 2px padding)
+    base = 19.5           # baseline y, so caps span 3.5-19.5 and descenders fit below
     os.makedirs(out_dir, exist_ok=True)
     n = 0
     for code in range(33, 127):
@@ -47,12 +48,11 @@ def convert(ttf_path, out_dir):
         d = pen.getCommands()
         if not d:
             continue
-        gs_ = min(s, SIZE / g.width) if g.width else s  # shrink if too wide
-        tx = (SIZE - g.width * gs_) / 2
-        ty = asc * gs_ + (SIZE - h * gs_) / 2
+        k = min(s, 20 / g.width) if g.width else s   # shrink only if too wide
+        tx = (SIZE - g.width * k) / 2
         svg = (f'<svg xmlns="http://www.w3.org/2000/svg" width="{SIZE}" height="{SIZE}" '
                f'viewBox="0 0 {SIZE} {SIZE}">'
-               f'<g transform="translate({tx:.3f},{ty:.3f}) scale({gs_:.6f},{-gs_:.6f})">'
+               f'<g transform="translate({tx:.3f},{base}) scale({k:.6f},{-k:.6f})">'
                f'<path fill="{FILL}" d="{d}"/></g></svg>')
         with open(os.path.join(out_dir, glyph_filename(chr(code)) + ".svg"), "w") as f:
             f.write(svg)
